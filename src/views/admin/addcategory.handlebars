@@ -1,0 +1,18 @@
+{{#each error}}
+<div class="row red lighten-2" style="border-radius: 5px; margin: 5px 0;">
+    <div class="col s12 m12">
+        <p class="center white-text">{{msg}}</p>
+    </div>
+
+</div>
+{{/each}}
+
+<h2 style="margin-top: 20px; font-size: 35px;">Cadastrar categoria</h2>
+<a style="color: white;" href="/categories"><button style="margin-bottom: 10px;" class="btn right">Lista de Categorias</button></a>
+<form action="" method="post">
+    <label for="name">Nome: </label>
+    <input type="text" name="name" id="name">
+    <label for="slug">Slug: </label>
+    <input type="text" name="slug" id="slug">
+    <button type="submit" class="btn btn-large green">Cadastrar Categoria</button>
+</form>
